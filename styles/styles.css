@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root{
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao-principal: #167BF7;
+    --cor-botao-principal-efeito: #3c92fa;
+    --cor-botao-secundario-efeito: #272626;
+    --cor-fundo: #00030C;
+
+    --fonte-principal: 'Inter', sans-serif;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45% 55%;    
+}
+
+.container__caixa{
+    margin: 0 0 0 3.37rem;
+}
+
+.container__titulo{
+    font-size: 1.75rem;
+    font-weight: 700; 
+}
+
+.container__imagem{
+    margin: 1.37rem 0 3.37rem 0;
+}
+
+.container__botao{
+    background-color: var(--cor-botao-principal);
+    color: var(--cor-principal);
+    border-radius: 8px;
+    padding: 1rem;
+    display: block;
+    margin: 0 2.5rem 0.6rem 2.5rem;
+
+}
+
+.container__botao:hover{
+    background-color: var(--cor-botao-principal-efeito);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+}
+
+.botao_secundario:hover{
+    background-color: var(--cor-botao-secundario-efeito);
+}
+
+.container__aviso{
+    color: var(--cor-secundaria);
+    font-size: 0.75rem;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.container__descricao{
+    margin-left: 5.6rem;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.descricao__texto{
+    color: var(--cor-secundaria);
+    line-height: 150%;
+    opacity: 0.8;
+}
+
+.terciario{
+    display: grid;
+    grid-template-columns: 54% 46%;
+    align-items: center;
+    
+}
+
+.terciario__botao{
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    
+}
+
+.terciario__descricao{
+    margin-left: 7.5rem;
+    margin-right: 4.37rem;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2.5rem 0;
+    
+}
+.dispositivos__titulo{
+    font-size:3rem;
+}
+
+.lista__item{
+    font-size: 2rem;
+}
+
+.rodape{
+    text-align: center;
+    margin-bottom: 6.19rem;
+}
+
+.rodape__logo{
+    margin-top: 9.06rem;
+    width: 7.5%;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 9.87rem 0 9.87rem;
+    list-style-type: none;
+}
+
+.lista__link a{
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.rodape__texto{
+    font-size: 0.87rem;
+    margin: 1.5rem 7.5rem 0 7.5rem;
+}
+
+.lista__link a:hover{
+    color: var(--cor-botao-principal);
+}
+
